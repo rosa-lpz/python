@@ -70,9 +70,6 @@ All unique numbers in a list are added together. If a number appears more than o
 
 ## Solution 1
 
-My Solution
-
-
 
 ```python
 def sum_unique_numbers(lst):
