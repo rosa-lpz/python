@@ -1,9 +1,9 @@
 # Python
 
-* Python Algorithms
+Python programming
 
 
-  # Content
+# Content
   * Python - NumPy
   * Python - Pandas
  
