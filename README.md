@@ -8,4 +8,5 @@ Python programming
   * Python - Pandas
   * Python - Bokeh
   * Python - Plotly
+  * Python - Algorithms
  
