@@ -5,4 +5,4 @@
 ## Content
 
 * Cheatsheet
-* Time seires
+* Time series
