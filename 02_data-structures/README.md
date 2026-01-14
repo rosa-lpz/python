@@ -1,6 +1,7 @@
 # Python Data Structures
 
-* ## Lists
-* ## Dictionaries
+* ## [Lists](/lists)
+* ## [Dictionaries](/dictionaries)
 * ## Tuples
 * ## Sets
+
