@@ -64,8 +64,6 @@ source venv/bin/activate
 
 ## Python environments with Anaconda
 
-
-
 Conda allows you to create separate environments, each containing  their own files, packages, and package dependencies. The contents of  each environment do not interact with each other.
 
 The most basic way to create a new environment is with the following command:
@@ -85,6 +83,10 @@ conda create --name envpython311 python==3.11 pandas==2.2.2 seaborn==0.13.2 matp
 ```
 
 For more information on working with environments, see [Managing environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
+
+
+
+### List of conda environments
 
 ```
 conda info --envs
