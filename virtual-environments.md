@@ -75,10 +75,12 @@ conda create --name <env-name>
 To add packages while creating an environment, specify them after the environment name:
 
 ```
-conda create --name myenvironment python numpy pandas
-conda create --name myenvironment python==3.11 pandas==2.2.2 seaborn==0.13.2 matplotlib==3.8.4
+conda create --name <env_name> python numpy pandas
+conda create --name <env_name> python==3.11 pandas==2.2.2 seaborn==0.13.2 matplotlib==3.8.4
+conda activate <env_name>
 
 conda create --name envpython311 python==3.11 pandas==2.2.2 seaborn==0.13.2 matplotlib==3.8.4
+conda activate envpython311
 
 ```
 
