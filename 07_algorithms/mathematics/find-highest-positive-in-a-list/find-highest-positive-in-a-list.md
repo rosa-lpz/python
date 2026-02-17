@@ -39,3 +39,9 @@ print(highest_positive([.2, 5, 3, -.1, 7, 7, 6]))
  7
 ```
 
+
+
+# References
+
+* Get the Last Element of List in Python
+  * https://www.geeksforgeeks.org/python/python-how-to-get-the-last-element-of-list/
