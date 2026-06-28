@@ -10,10 +10,25 @@
 * ### [8. Functional Programming](08_functional-programming/)
 * ### [9. Object Oriented Programming (OOP)](09_object-oriented-programming/)
 
-# Python Libraries
-  * ### [NumPy](numpy/)
-  * ### [Pandas](pandas/)
-  * ### [Bokeh](bokeh/)
-  * ### [Plotly](plotly/)
-  * ### [Seaborn](seaborn/) 
  
+# Python Libraries 
+
+## Math & Data Analysis
+* [NumPy](python-libraries/numpy)
+* [Pandas](python-libraries/pandas)
+
+## Data visualization
+* [Matplotlib](python-libraries/matplotlib)
+* [Bokeh](python-libraries/bokeh)
+* [Plotly](python-libraries/plotly)
+* [Seaborn](python-libraries/seaborn)
+
+## Machine Learning & Deep Learning
+* [Scikit-learn](python-libraries/scikit-learn)
+* [PyTorch](python-libraries/pytorch)
+* [TensorFlow](python-libraries/tensorflow)
+
+# Python Frameworks
+* [Flask](python-frameworks/flask)
+* [Plotly Dash](python-frameworks/plotly-dash)
+* [Streamlit](python-frameworks/streamlit)
