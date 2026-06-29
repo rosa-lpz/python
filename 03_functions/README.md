@@ -1,4 +1,4 @@
-# Function
+# Python Functions
 
 
 In Python, function is a group of related statements that perform a specific task.
