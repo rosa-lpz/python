@@ -35,6 +35,12 @@ python -m pip install requests
 
 ### Linux
 
+Install venv
+````
+sudo apt install python3-venv python3-pip
+````
+
+Check
 ````bash
 python3 -m ensurepip --default-pip
 ````
@@ -52,6 +58,11 @@ py -m venv venv
 
 
 ### Linux
+
+````bash
+python3 -m venv venv
+source venv/bin/activate
+````
 
 ````bash
 python3 -m venv venv
