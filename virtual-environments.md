@@ -31,6 +31,10 @@ For install packages
 python -m pip install requests
 ```
 
+Create the environment
+```cmd
+py -m venv venv
+```
 
 
 ### Linux
@@ -45,32 +49,11 @@ Check
 python3 -m ensurepip --default-pip
 ````
 
-
-
-## 
-
-### Windows
-
-```cmd
-py -m venv venv
-```
-
-
-
-### Linux
-
+Create the environment
 ````bash
 python3 -m venv venv
 source venv/bin/activate
 ````
-
-````bash
-python3 -m venv venv
-source venv/bin/activate
-````
-
-
-
 
 
 ## Python environments with Anaconda
