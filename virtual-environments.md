@@ -97,3 +97,5 @@ conda environments:
    myenvironment   * /home/username/Anaconda3/envs/myenvironment
 ````
 
+# References
+* https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
