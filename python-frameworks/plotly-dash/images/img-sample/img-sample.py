@@ -1,0 +1,41 @@
+import base64
+import io
+import pandas as pd 
+from dash import Dash, html, dcc, Input, Output
+from PIL import Image
+import dash_bootstrap_components as dbc
+# 1. Sample Base64 encoded string (A small blue square)
+#SAMPLE_B64 = "iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAnUlEQVR42u3RAQ0AAAgDoMv8OasId5g9KAs6uYwYgghBCHmCCEEIeYIIQQh5gghBCHmCCEEIeYIIQQh5gghBCHmCCEEIeYIIQQh5gghBCHmCCEEIeYIIQQh5gghBCHmCCEEIeYIIQQh5gghBCHmCCEEIeYIIQQh5gghBCHmCCEEIeYIIQQh5gghBCHmCCEEIeYIIQQh5gghBCHmCcAtD0r8fAnv0XAAAAABJRU5ErkJggg=="
+
+
+df = pd.read_csv("data/combined.csv")
+app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+#img_b64 = df['image'][0]
+img_b64='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'
+
+app.layout = html.Div([
+    html.H1("Base64 to Image in Dash", style={'textAlign': 'center'}),
+    
+    html.Div([
+        html.Button("Display Image", id="trigger-btn", n_clicks=0),
+    ], style={'textAlign': 'center', 'marginBottom': '20px'}),
+    
+    # Target container where the image will be displayed
+    html.Div(id="image-container", style={'textAlign': 'center'})
+])
+
+@app.callback(
+    Output("image-container", "children"),
+    Input("trigger-btn", "n_clicks"),
+    prevent_initial_call=True
+)
+def display_image(n_clicks):
+    # Formulating the Data URI string that browsers understand
+    # Syntax: data:<mime_type>;base64,<encoded_string>
+    image_source = f"data:image/png;base64,{img_b64}"
+    
+    # Return an HTML image component pointing to the base64 URI
+    return html.Img(src=image_source, style={'width': '150px', 'height': '150px', 'border': '2px solid #333'})
+
+if __name__ == '__main__':
+    app.run(debug=True)

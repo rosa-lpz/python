@@ -1,0 +1,8 @@
+pandas
+plotly
+matplotlib
+pillow
+dash
+dash-ag-grid
+dash-bootstrap-components
+ 
