@@ -18,3 +18,10 @@ The framework is built on top of Flask, Plotly.js, and React.js.  Key features i
 
 # References
 * [Real Python - Develop Data Visualization Interfaces in Python With Dash](https://realpython.com/python-dash/)
+
+
+
+## Videos
+
+* Plotly
+  * Dash in 5 minutes: https://youtu.be/e4ti2fCpXMI
