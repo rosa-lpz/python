@@ -38,6 +38,19 @@ py -m pip install --upgrade pip
 py -m pip --version
 ````
 
+# Python packages installation
+```
+pip install <package>
+```
+## Anaconda
+
+```
+conda install <package>
+```
+
+**References**
+* https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/installing-with-conda.html
+
 
 
 ### Reference
