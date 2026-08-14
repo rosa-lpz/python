@@ -15,3 +15,53 @@ Polars is an open-source library for data manipulation, known for being  one of 
 - **GPU Support**: Optionally run queries on NVIDIA GPUs for maximum performance for in-memory or  streaming workloads.
 - **[Apache Arrow support](https://arrow.apache.org/)**: Polars can consume and produce Arrow data  often with zero-copy operations. Note that Polars is not built on a Pyarrow/Arrow implementation.  Instead, Polars has its own compute and buffer implementations.
 
+## Philosophy
+
+The goal of Polars is to provide a lightning fast DataFrame library that:
+
+- Utilizes all available cores on your machine.
+- Optimizes queries to reduce unneeded work/memory allocations.
+- Handles datasets much larger than your available RAM.
+- A consistent and predictable API.
+- Adheres to a strict schema (data-types should be known before running the query).
+
+Polars is written in Rust which gives it C/C++ performance and allows it to fully control performance-critical parts in a query engine.
+
+
+
+## Example
+
+**Python**
+
+```python
+import polars as pl
+
+q = (
+    pl.scan_csv("docs/assets/data/iris.csv")
+    .filter(pl.col("sepal_length") > 5)
+    .group_by("species")
+    .agg(pl.all().sum())
+)
+
+df = q.collect()
+
+```
+
+**Rust**
+
+```python
+use polars::prelude::*;
+
+let q = LazyCsvReader::new(PlRefPath::new("docs/assets/data/iris.csv"))
+    .with_has_header(true)
+    .finish()?
+    .filter(col("sepal_length").gt(lit(5)))
+    .group_by(vec![col("species")])
+    .agg([col("*").sum()]);
+
+let df = q.collect()?;
+
+```
+
+
+
