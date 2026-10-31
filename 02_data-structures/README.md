@@ -20,4 +20,6 @@ type(new_variable)
 ```bash
 list
 ```
-
+ # References
+* https://realpython.com/tutorials/algorithms/
+* https://www.geeksforgeeks.org/python/python-programming-language-tutorial/
